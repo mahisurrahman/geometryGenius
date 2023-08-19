@@ -23,8 +23,8 @@
 
     </header>
     <main>
-        <div class="flex flex-col lg:flex-row">
-            <div class="flex-1 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+        <div class="flex flex-col lg:flex-row mt-10">
+            <div class="flex-1 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-1">
                 <!--First Card-->
                 <div class="card w-72 bg-base-100 shadow-xl">
                     <figure class="px-10 pt-10">
@@ -32,9 +32,16 @@
                     </figure>
                     <div class="card-body items-center text-center">
                         <h2 class="card-title">Triangle</h2>
-                        <p>If a dog chews shoes whose shoes does he choose?</p>
-                        <div class="card-actions">
-                            <button class="btn btn-primary">Buy Now</button>
+                        <p class="font-light">Area (A) = 1/2 x b x h</p>
+                        <p>
+                            <input type="text" class="border w-16 ml-2 pl-2 bg-slate-100" placeholder="b" name="" id="triangle-base">
+                            <span class="">cm</span>
+                            <input type="text" class="border w-16 ml-2 pl-2 bg-slate-100" placeholder="h" name="" id="triangle-height">
+                            <span class="">cm</span>
+                        </p>
+                        <p><span class="">Area: </span></p>
+                        <div class="card-actions w-full">
+                            <button id="triangleButton" class="btn btn-primary mt-5 w-full">Calculate</button>
                         </div>
                     </div>
                 </div>
@@ -73,7 +80,7 @@
     <footer>
 
     </footer>
-    <script src="./javascript/initial.js"></script>
+    <script src="./javascript/area-calculator.js"></script>
 </body>
 
 </html>
