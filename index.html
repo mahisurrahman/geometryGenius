@@ -72,25 +72,51 @@
                 <!--Third Card-->
                 <div class="card w-72 bg-base-100 shadow-xl">
                     <figure class="px-10 pt-10">
-                        <img src="./images/triangle.png" alt="Shoes" class="rounded-xl" />
+                        <img src="./images/parallelogram.png" alt="Shoes" class="rounded-xl" />
                     </figure>
                     <div class="card-body items-center text-center">
-                        <h2 class="card-title">Triangle</h2>
-                        <p class="font-light">Area (A) = 1/2 x b x h</p>
+                        <h2 class="card-title">Parallelogram</h2>
+                        <p class="font-light">Area (A) = b x h</p>
                         <p>
                             <input type="text" class="border w-16 ml-2 pl-2 bg-slate-100" placeholder="b" name=""
-                                id="triangle-base">
+                                id="parallelogram-base">
                             <span class="">cm</span>
                             <input type="text" class="border w-16 ml-2 pl-2 bg-slate-100" placeholder="h" name=""
-                                id="triangle-height">
+                                id="paralellogram-height">
                             <span class="">cm</span>
                         </p>
-                        <p class="text-xl font-bold"><span id="triangle-area">Area: 0</span> cm<sup>2</sup></p>
+                        <p class="text-xl font-bold"><span id="paralellogram-area">Area: 0</span> cm<sup>2</sup></p>
                         <div class="card-actions w-full">
-                            <button id="triangleButton" class="btn btn-primary mt-5 w-full">Calculate</button>
+                            <button onclick="calculateParalellogramArea()" id="paralellogrambtn" class="btn btn-primary mt-5 w-full">Calculate</button>
                         </div>
                     </div>
                 </div>
+                <!--Fourth Card-->
+                <div class="card w-72 bg-base-100 shadow-xl mt-5">
+                    <figure class="px-10 pt-10">
+                        <img src="./images/ellipse.png" alt="Shoes" class="rounded-xl" />
+                    </figure>
+                    <div class="card-body items-center text-center">
+                        <h2 class="card-title">Ellipse</h2>
+                        <p class="font-light">Area (A) = π x a x b</p>
+                        <p>
+                            <input type="text" class="border w-16 ml-2 pl-2 bg-slate-100" placeholder="large" name=""
+                                id="majorRadius">
+                            <span class="">cm</span>
+                            <input type="text" class="border w-16 ml-2 pl-2 bg-slate-100" placeholder="short" name=""
+                                id="minorRadius">
+                            <span class="">cm</span>
+                        </p>
+                        <p class="text-xl font-bold"><span id="ellipse-area">Area: 0</span> cm<sup>2</sup></p>
+                        <div class="card-actions w-full">
+                            <button onclick="calculateEllipseArea()" id="ellipsebtn" class="btn btn-primary mt-5 w-full">Calculate</button>
+                        </div>
+                    </div>
+                </div>
+                <!--Fifth Card-->
+                
+                <!--Sixth Card-->
+                
             </div>
             <div class="w-[200px]">
                 <div class="text-2xl">Area Calculator</div>
